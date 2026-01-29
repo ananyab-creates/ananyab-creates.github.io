@@ -240,3 +240,10 @@ function setupMusicPlayer() {
         }
     });
 } 
+document.addEventListener("click", () => {
+  const music = document.getElementById("bg-music");
+  if (music && music.paused) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
